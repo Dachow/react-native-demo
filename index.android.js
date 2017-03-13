@@ -9,11 +9,12 @@ import {AppRegistry} from 'react-native';
 
 
 // import Component
-import MovieList from './src/MovieList';
-import Navigation from './src/Navigation';
-import Alert from './src/Alert';
-import SimpleLayout from './src/Layout';
-import SimpleIndex from './src/simpleIndex/App';
+// import MovieList from './src/MovieList';
+// import Navigation from './src/Navigation';
+// import Alert from './src/Alert';
+// import SimpleLayout from './src/Layout';
+// import SimpleIndex from './src/simpleIndex/App';
+import StopWatch from './src/StopWatch/index';
 
 
 // main
@@ -23,7 +24,8 @@ class AwesomeProject extends Component {
     // return <Navigation />
     // return <Alert />
     // return <SimpleLayout />
-    return <SimpleIndex />
+    // return <SimpleIndex />
+    return <StopWatch />
   }
 }
 
