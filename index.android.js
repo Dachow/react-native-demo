@@ -5,115 +5,31 @@
  */
 
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, Image, View, ListView} from 'react-native';
+import {AppRegistry} from 'react-native';
 
-// several data
-var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExampl' +
-    'e.json';
 
-// var MOCKED_MOVIES_DATA = [   {     title: '标题',     year: '2015', posters: {
-//      thumbnail: 'http://i.imgur.com/UePbdph.jpg'     }   } ];
+// import Component
+import MovieList from './src/MovieList';
+import Navigation from './src/Navigation';
+import Alert from './src/Alert';
+import SimpleLayout from './src/Layout';
+import SimpleIndex from './src/simpleIndex/App';
 
-class AwesomeProject extends React.Component {
-  constructor(props) {
-    super(props);
-    this.fetchData = this
-      .fetchData
-      .bind(this);
-    this.state = {
-      loaded: false,
-      dataSource: new ListView.DataSource({
-        rowHasChanged: (row1, row2) => row1 !== row2
-      })
-    }
-  }
 
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData() {
-    fetch(REQUEST_URL)
-      .then(Response => Response.json())
-      .then(ResponseData => {
-        // console.log(ResponseData);
-        this.setState({
-          dataSource: this.state.dataSource.cloneWithRows(ResponseData.movies),
-          loaded: true
-        })
-      })
-  }
-
-  renderLoadingView() {
-    return (
-      <View style={styles.container}>
-        <Text>
-          正在加载电影数据。。。
-        </Text>
-      </View>
-    )
-  }
-
-  renderMovie(movie) {
-    return (
-      <View style={styles.container}>
-        <Image
-          source={ {uri: movie.posters.thumbnail} }
-          style={ styles.thumbnail }
-        ></Image>
-        <View style={styles.rightContainer}>
-          <Text style={styles.title}>{movie.title}</Text>
-          <Text style={styles.year}>{movie.year}</Text>
-        </View>
-      </View>
-    )
-  }
-
+// main
+class AwesomeProject extends Component {
   render() {
-    // const movie = MOCKED_MOVIES_DATA[0];
-    if (!this.state.loaded) {
-      return this.renderLoadingView();
-    }
-    // console.log(this.state.movies[0]);
-    return (
-      <ListView
-        dataSource={this.state.dataSource}
-        renderRow={this.renderMovie}
-        style={styles.listView}
-      >
-      </ListView>
-    )
+    // return <MovieList />
+    // return <Navigation />
+    // return <Alert />
+    // return <SimpleLayout />
+    return <SimpleIndex />
   }
-
 }
 
-var styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF'
-  },
-  rightContainer: {
-    flex: 1
-  },
-  thumbnail: {
-    width: 53,
-    height: 81
-  },
-  title: {
-    fontSize: 20,
-    marginBottom: 8,
-    textAlign: 'center'
-  },
-  year: {
-    textAlign: 'center'
-  },
-   listView: {
-    paddingTop: 20,
-    backgroundColor: '#F5FCFF',
-  },
-})
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+
+AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject)
+
+// it's okay
+// AppRegistry.registerComponent('AwesomeProject', () => MovieList);
