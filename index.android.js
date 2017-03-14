@@ -14,7 +14,8 @@ import {AppRegistry} from 'react-native';
 // import Alert from './src/Alert';
 // import SimpleLayout from './src/Layout';
 // import SimpleIndex from './src/simpleIndex/App';
-import StopWatch from './src/StopWatch/index';
+// import StopWatch from './src/StopWatch/index';
+import Navigation from './src/Navigation/demo'
 
 
 // main
@@ -25,7 +26,8 @@ class AwesomeProject extends Component {
     // return <Alert />
     // return <SimpleLayout />
     // return <SimpleIndex />
-    return <StopWatch />
+    // return <StopWatch />
+    return <Navigation />
   }
 }
 
