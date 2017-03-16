@@ -15,7 +15,12 @@ import {AppRegistry} from 'react-native';
 // import SimpleLayout from './src/Layout';
 // import SimpleIndex from './src/simpleIndex/App';
 // import StopWatch from './src/StopWatch/index';
-import Navigation from './src/Navigation/demo'
+// import Navigation from './src/Navigation/demo'
+// import SimpleStack from './src/Navigation/SimpleStack'
+// import ModalStack from './src/Navigation/ModalStack'
+// import TabNavigator from './src/Navigation/TabNavigator'
+// import DrawerNavigator from './src/Navigation/DrawerNavigator'
+import Animated from './src/Animated/copy'
 
 
 // main
@@ -27,7 +32,12 @@ class AwesomeProject extends Component {
     // return <SimpleLayout />
     // return <SimpleIndex />
     // return <StopWatch />
-    return <Navigation />
+    // return <Navigation />
+    // return <SimpleStack />
+    // return <ModalStack />
+    // return <TabNavigator />
+    // return <DrawerNavigator />
+    return <Animated />
   }
 }
 

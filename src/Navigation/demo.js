@@ -32,11 +32,24 @@ class AllContactsScreen extends React.Component {
     )
   }
 }
+class OtherContactsScreen extends React.Component {
+  render() {
+    return (
+      <View>
+        <Button
+          onPress={() => this.props.navigation.navigate('Chat', { user: 'Me' })}
+          title="Chat with Me"
+        />
+      </View>
+    )
+  }
+}
 
 // tab view
 const MainScreenNavigator = TabNavigator({
   Tab1: { screen: RecentChatsScreen },
   Tab2: { screen: AllContactsScreen },
+  Tab3: { screen: OtherContactsScreen },
 });
 
 
