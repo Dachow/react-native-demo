@@ -21,7 +21,8 @@ import {AppRegistry} from 'react-native';
 // import TabNavigator from './src/Navigation/TabNavigator'
 // import DrawerNavigator from './src/Navigation/DrawerNavigator'
 // import Animated from './src/Animated/copy'
-import Weather from './src/Weather/index'
+// import Weather from './src/Weather/index'
+import Press from './src/Touch/Press'
 
 
 // main
@@ -39,7 +40,8 @@ class AwesomeProject extends Component {
     // return <TabNavigator />
     // return <DrawerNavigator />
     // return <Animated />
-    return <Weather />
+    // return <Weather />
+    return <Press />
   }
 }
 

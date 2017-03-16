@@ -59,11 +59,10 @@ export default class App extends Component {
         <Image source={require('../images/flowers.png')}
           style={styles.backdrop}
           >
-          <View style={styles.overlay}>
+          {/*<View style={styles.overlay}>
             <View style={styles.row}>
               <Text style={styles.mainText}>当前城市：{this.state.cityName}</Text>
               <View style={styles.zipContainer}>
-                {/*returnKeyType什么用*/}
                 <TextInput
                   style={[styles.zipCode, styles.mainText]}
                   returnKeyType='go'
@@ -72,7 +71,8 @@ export default class App extends Component {
               </View>
             </View>
             {content}
-          </View>
+          </View>*/}
+          <Text>Hello</Text>
         </Image>
       </View>
     )
