@@ -20,7 +20,8 @@ import {AppRegistry} from 'react-native';
 // import ModalStack from './src/Navigation/ModalStack'
 // import TabNavigator from './src/Navigation/TabNavigator'
 // import DrawerNavigator from './src/Navigation/DrawerNavigator'
-import Animated from './src/Animated/copy'
+// import Animated from './src/Animated/copy'
+import Weather from './src/Weather/index'
 
 
 // main
@@ -37,7 +38,8 @@ class AwesomeProject extends Component {
     // return <ModalStack />
     // return <TabNavigator />
     // return <DrawerNavigator />
-    return <Animated />
+    // return <Animated />
+    return <Weather />
   }
 }
 
