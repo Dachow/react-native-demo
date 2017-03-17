@@ -22,7 +22,11 @@ import {AppRegistry} from 'react-native';
 // import DrawerNavigator from './src/Navigation/DrawerNavigator'
 // import Animated from './src/Animated/copy'
 // import Weather from './src/Weather/index'
-import Press from './src/Touch/Press'
+// import Press from './src/Touch/Press'
+// import AwesomeMovieList from './src/MovieList/Index'
+// import GetLocation from './src/GetLocation/index'
+// import Camera from './src/Camera/index'
+import Storage from './src/Storage/index'
 
 
 // main
@@ -41,7 +45,11 @@ class AwesomeProject extends Component {
     // return <DrawerNavigator />
     // return <Animated />
     // return <Weather />
-    return <Press />
+    // return <Press />
+    // return <AwesomeMovieList />
+    // return <GetLocation />
+    // return <Camera />
+    return <Storage />
   }
 }
 
