@@ -2,5 +2,10 @@ rootProject.name = 'AwesomeProject'
 
 include ':app'
 
+// 百度地图
 include ':react-native-baidu-map'
 project(':react-native-baidu-map').projectDir = new File(settingsDir,'../node_modules/react-native-baidu-map/android')
+
+// 高德地图
+include ':react-native-smart-amap'
+project(':react-native-smart-amap').projectDir = new File(settingsDir, '../node_modules/react-native-smart-amap/android')

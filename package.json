@@ -11,6 +11,7 @@
     "react-native": "0.42.0",
     "react-native-baidu-map": "^0.6.0",
     "react-native-scrollable-tab-view": "^0.7.2",
+    "react-native-smart-amap": "^1.0.2",
     "react-native-swiper": "^1.5.4",
     "react-native-vector-icons": "^4.0.0",
     "react-navigation": "^1.0.0-beta.7"
