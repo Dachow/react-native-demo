@@ -26,7 +26,8 @@ import {AppRegistry} from 'react-native';
 // import AwesomeMovieList from './src/MovieList/Index'
 // import GetLocation from './src/GetLocation/index'
 // import Camera from './src/Camera/index'
-import Storage from './src/Storage/index'
+// import Storage from './src/Storage/index'
+import Map from './src/Map/Index'
 
 
 // main
@@ -49,7 +50,8 @@ class AwesomeProject extends Component {
     // return <AwesomeMovieList />
     // return <GetLocation />
     // return <Camera />
-    return <Storage />
+    // return <Storage />
+    return <Map />
   }
 }
 
