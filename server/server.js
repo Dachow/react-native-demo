@@ -4,7 +4,7 @@ var express = require('express')
   , utils = require('./utils')
   , LocalStrategy = require('passport-local').Strategy
   , RememberMeStrategy = require('passport-remember-me').Strategy;
-  
+
 
 /* Fake, in-memory database of users */
 
@@ -75,7 +75,7 @@ passport.use(new LocalStrategy(
   function(username, password, done) {
     // asynchronous verification, for effect...
     process.nextTick(function () {
-      
+
       // Find the user by username.  If there is no user with the given
       // username, or the password is not correct, set the user to `false` to
       // indicate failure and set a flash message.  Otherwise, return the
@@ -99,7 +99,7 @@ passport.use(new RememberMeStrategy(
     consumeRememberMeToken(token, function(err, uid) {
       if (err) { return done(err); }
       if (!uid) { return done(null, false); }
-      
+
       findById(uid, function(err, user) {
         if (err) { return done(err); }
         if (!user) { return done(null, false); }
@@ -159,12 +159,15 @@ app.get('/login', function(req, res){
 //   which, in this example, will redirect the user to the home page.
 //
 //   curl -v -d "username=bob&password=secret" http://127.0.0.1:3000/login
-app.post('/login', 
+app.post('/login',
   passport.authenticate('local', { failureRedirect: '/login', failureFlash: true }),
   function(req, res, next) {
+    console.log('-------------------------')
+    console.log(res);
+    console.log('-------------------------')
     // Issue a remember me cookie if the option was checked
     if (!req.body.remember_me) { return next(); }
-    
+
     issueToken(req.user, function(err, token) {
       if (err) { return next(err); }
       res.cookie('remember_me', token, { path: '/', httpOnly: true, maxAge: 604800000 });

@@ -31,8 +31,10 @@ import {AppRegistry} from 'react-native';
 // import AMap from './src/Map/AMap'
 // import Alipay from './src/WebPay/Alipay';
 // import Login from './src/Login/App'
-import WebViewTest from './src/Login/Test'
+// import WebViewTest from './src/Login/Test'
 // import Back from './src/Back/Index'
+// import LoginUI from './src/Login/UI'
+import Signin from './src/Signin/navigator'
 
 
 // main
@@ -60,8 +62,10 @@ class AwesomeProject extends Component {
     // return <AMap />
     // return <Alipay />
     // return <Login />
-    return <WebViewTest />
+    // return <WebViewTest />
     // return <Back />
+    // return <LoginUI />
+    return <Signin />
   }
 }
 
