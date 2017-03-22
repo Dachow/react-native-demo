@@ -9,7 +9,10 @@ import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
 import org.lovebing.reactnative.baidumap.BaiduMapPackage;
-import com.reactnativecomponent.amaplocation.RCTAMapPackage;    //import package
+// import com.reactnativecomponent.amaplocation.RCTAMapPackage;    //import package
+
+// react-native-cookie
+import com.psykar.cookiemanager.CookieManagerPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,7 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
           new BaiduMapPackage(getApplicationContext()),
-          new RCTAMapPackage()  //register Module
+          new CookieManagerPackage()
+          // new RCTAMapPackage()  //register Module
       );
     }
   };

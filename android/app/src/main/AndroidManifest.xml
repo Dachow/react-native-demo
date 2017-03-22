@@ -63,12 +63,12 @@
       <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="erdIBvGhAXHzmpG8WzqjMgIKO4Uh9b9S"/>
 
       <!--高德地图SDK key设置-->
-      <meta-data
+      <!--<meta-data
           android:name="com.amap.api.v2.apikey"
-          android:value="74401ce0a490412b2fc36ad69033cea7"/>
+          android:value="74401ce0a490412b2fc36ad69033cea7"/>-->
       <!--高德地图APS服务设置-->
-      <service android:name="com.amap.api.location.APSService" >
-      </service>
+      <!--<service android:name="com.amap.api.location.APSService" >
+      </service>-->
 
       <activity
         android:name=".MainActivity"

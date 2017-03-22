@@ -28,7 +28,9 @@ import {AppRegistry} from 'react-native';
 // import Camera from './src/Camera/index'
 // import Storage from './src/Storage/index'
 // import BDMap from './src/Map/BD'
-import AMap from './src/Map/AMap'
+// import AMap from './src/Map/AMap'
+// import Alipay from './src/WebPay/Alipay';
+import Login from './src/Login/App'
 
 
 // main
@@ -53,7 +55,9 @@ class AwesomeProject extends Component {
     // return <Camera />
     // return <Storage />
     // return <BDMap />
-    return <AMap />
+    // return <AMap />
+    // return <Alipay />
+    return <Login />
   }
 }
 
