@@ -21,9 +21,11 @@ export default class ReactNativeLogin extends Component {
 
   componentWillMount () {
     CookieManager.get(HOME_URL, (err, cookie) => {
+
       let isAuthenticated;
       // If it differs, change `cookie.remember_me` to whatever the name for your persistent cookie is!!!
       if (cookie && cookie.hasOwnProperty('remember_me')) {
+        // 登陆后会生成一个'remember_me'的属性，即loggedIn为true
         isAuthenticated = true;
       }
       else {
@@ -41,21 +43,35 @@ export default class ReactNativeLogin extends Component {
     // If we get redirected back to the HOME_URL we know that we are logged in. If your backend does something different than this
     // change this line.
     if (navState.url == HOME_URL) {
+      console.log('set log in');
+      // 不更新UI？
       this.setState({
         loggedIn: true,
       });
     }
+
+    console.log(navState.url);
+
+    // CookieManager.getHeader(navState.url, (err, res) => {
+    //   console.log('Get cookie ' + res.Cookie);
+
+    // })
+
   }
 
   render () {
     // If we have completed loading the cookie choose to show Login WebView or the LoggedIn component, else just show an empty View.
     if (this.state.loadedCookie) {
       if (this.state.loggedIn) {
+        console.log('log in');
+
         return (
           <LoggedIn/>
         );
       }
       else {
+        console.log('no in');
+
         return (
           <View style={[styles.container]}>
             <WebView

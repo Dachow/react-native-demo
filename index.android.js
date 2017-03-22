@@ -30,7 +30,9 @@ import {AppRegistry} from 'react-native';
 // import BDMap from './src/Map/BD'
 // import AMap from './src/Map/AMap'
 // import Alipay from './src/WebPay/Alipay';
-import Login from './src/Login/App'
+// import Login from './src/Login/App'
+import WebViewTest from './src/Login/Test'
+// import Back from './src/Back/Index'
 
 
 // main
@@ -57,7 +59,9 @@ class AwesomeProject extends Component {
     // return <BDMap />
     // return <AMap />
     // return <Alipay />
-    return <Login />
+    // return <Login />
+    return <WebViewTest />
+    // return <Back />
   }
 }
 
