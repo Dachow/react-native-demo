@@ -35,7 +35,9 @@ import {AppRegistry} from 'react-native';
 // import Back from './src/Back/Index'
 // import LoginUI from './src/Login/UI'
 // import Signin from './src/Signin/navigator'
-import LoginTest from './src/Login/Index'
+// import LoginTest from './src/Login/Index'
+// import ImgPicker from './src/imgPicker/Index'
+import ImgPickMultiple from './src/imgPicker/Multiple'
 
 
 // main
@@ -67,7 +69,9 @@ class AwesomeProject extends Component {
     // return <Back />
     // return <LoginUI />
     // return <Signin />
-    return <LoginTest />
+    // return <LoginTest />
+    // return <ImgPicker />
+    return <ImgPickMultiple />
   }
 }
 

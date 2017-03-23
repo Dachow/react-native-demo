@@ -3,7 +3,19 @@ package com.awesomeproject;
 import com.facebook.react.ReactActivity;
 import com.psykar.cookiemanager.CookieManagerPackage;
 
+// splashscreen
+import android.os.Bundle;
+import com.cboy.rn.splashscreen.SplashScreen;
+
 public class MainActivity extends ReactActivity {
+
+  // splashscreen
+   @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen.show(this);  // here
+        super.onCreate(savedInstanceState);
+    }
+
 
     /**
      * Returns the name of the main component registered from JavaScript.
