@@ -34,7 +34,8 @@ import {AppRegistry} from 'react-native';
 // import WebViewTest from './src/Login/Test'
 // import Back from './src/Back/Index'
 // import LoginUI from './src/Login/UI'
-import Signin from './src/Signin/navigator'
+// import Signin from './src/Signin/navigator'
+import LoginTest from './src/Login/Index'
 
 
 // main
@@ -65,7 +66,8 @@ class AwesomeProject extends Component {
     // return <WebViewTest />
     // return <Back />
     // return <LoginUI />
-    return <Signin />
+    // return <Signin />
+    return <LoginTest />
   }
 }
 

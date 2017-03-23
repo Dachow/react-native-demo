@@ -20,10 +20,10 @@ export default class LoginActivity extends Component {
     let formData = new FormData();
     formData.append("loginName",this.userName);
     formData.append("pwd",this.password);
-    let url = "http://192.168.0.108:3000/";
+    let url = "http://192.168.0.102:3000/";
     NetUitl.postJson(url,formData,(responseText) => {
           alert(responseText);
-          this.onLoginSuccess();
+          // this.onLoginSuccess();
     })
 
 
